@@ -13,6 +13,8 @@ regions:
   nav_main: "Main navigation region"
   nav_domain_branding: "Domain branding region"
   nav_domain: "Domain navigation region"
+  nav_topic_branding: "Topic branding region"
+  nav_topic: "Topic navigation region"
   breadcrumb: Breadcrumbs
   content: "Main content"
   sidebar_first: "Sidebar first"

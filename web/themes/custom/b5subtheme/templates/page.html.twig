@@ -81,17 +81,17 @@ set footer_classes = ' ' ~
 
   {# domain nav #}
   {% if page.nav_domain %}
-  <nav class="{{ nav_classes }}">
+  <nav class="{{ nav_classes }} domain">
     <div class="{{ b5_top_container }} d-flex">
       {{ page.nav_domain_branding }}
 
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              data-bs-target="#navbarSupportedDomain" aria-controls="navbarSupportedDomain"
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-md-start flex-wrap" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-content-md-start flex-wrap" id="navbarSupportedDomain">
         
         <div>{{ page.nav_domain }}</div>
         
@@ -100,6 +100,26 @@ set footer_classes = ' ' ~
   </nav>
   {% endif %}
 
+  {# topic nav #}
+  {% if page.nav_topic %}
+  <nav class="{{ nav_classes }} topic">
+    <div class="{{ b5_top_container }} d-flex">
+      {{ page.nav_topic_branding }}
+
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedTopic" aria-controls="navbarSupportedTopic"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-start flex-wrap" id="navbarSupportedTopic">
+        
+        <div>{{ page.nav_topic }}</div>
+        
+      </div>
+    </div>
+  </nav>
+  {% endif %}
 
 </header>
 
