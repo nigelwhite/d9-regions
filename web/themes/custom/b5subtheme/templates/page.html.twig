@@ -59,7 +59,8 @@ set footer_classes = ' ' ~
 <header>
   {{ page.header }}
 
-  {% if page.nav_branding or page.nav_main or page.nav_domain or page.nav.topic %}
+{# main nav #}
+  {% if page.nav_branding or page.nav_main %}
   <nav class="{{ nav_classes }}">
     <div class="{{ b5_top_container }} d-flex">
       {{ page.nav_branding }}
@@ -71,13 +72,34 @@ set footer_classes = ' ' ~
       </button>
 
       <div class="collapse navbar-collapse justify-content-md-end flex-wrap" id="navbarSupportedContent">
-        {{ page.nav_main }}
-        {{ page.nav_domain }}
-        {{ page.nav_topic }}
+        <div>{{ page.nav_main }}</div>
+        
       </div>
     </div>
   </nav>
   {% endif %}
+
+  {# domain nav #}
+  {% if page.nav_domain %}
+  <nav class="{{ nav_classes }}">
+    <div class="{{ b5_top_container }} d-flex">
+      {{ page.nav_domain_branding }}
+
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-start flex-wrap" id="navbarSupportedContent">
+        
+        <div>{{ page.nav_domain }}</div>
+        
+      </div>
+    </div>
+  </nav>
+  {% endif %}
+
 
 </header>
 
