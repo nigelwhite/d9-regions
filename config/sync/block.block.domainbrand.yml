@@ -1,0 +1,25 @@
+uuid: 9c3dcc41-3da6-4b7b-9ba0-ac792d56af89
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ace258c1-b957-4276-8236-16760ba6e8bc'
+  module:
+    - block_content
+  theme:
+    - b5subtheme
+id: domainbrand
+theme: b5subtheme
+region: nav_domain_branding
+weight: 0
+provider: null
+plugin: 'block_content:ace258c1-b957-4276-8236-16760ba6e8bc'
+settings:
+  id: 'block_content:ace258c1-b957-4276-8236-16760ba6e8bc'
+  label: 'Domain brand'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 9647117b-5695-4381-8256-e3ee16d40542
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ae75248-3972-47c7-974a-9cd4c64d313a'
+  module:
+    - block_content
+  theme:
+    - b5subtheme
+id: topicbrand
+theme: b5subtheme
+region: nav_topic_branding
+weight: 0
+provider: null
+plugin: 'block_content:6ae75248-3972-47c7-974a-9cd4c64d313a'
+settings:
+  id: 'block_content:6ae75248-3972-47c7-974a-9cd4c64d313a'
+  label: 'Topic brand'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

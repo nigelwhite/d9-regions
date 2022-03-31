@@ -1,0 +1,8 @@
+uuid: 1383a470-2d20-422f-8686-b6473c3f3aab
+langcode: en
+status: true
+dependencies: {  }
+id: domain-navigation
+label: 'Domain navigation'
+description: ''
+locked: false

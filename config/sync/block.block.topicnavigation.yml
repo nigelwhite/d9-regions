@@ -1,0 +1,25 @@
+uuid: e727f0a4-5901-4665-86e0-b4bf60547f99
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.topic-navigation
+  module:
+    - system
+  theme:
+    - b5subtheme
+id: topicnavigation
+theme: b5subtheme
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:topic-navigation'
+settings:
+  id: 'system_menu_block:topic-navigation'
+  label: 'Topic navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

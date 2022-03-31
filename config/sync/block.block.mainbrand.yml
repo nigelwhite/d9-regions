@@ -1,0 +1,25 @@
+uuid: f93afc6b-2af9-4ad9-a5d2-86d8d9c3e5a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:18bf3a08-6636-4a58-ac9e-50bb4cc11c33'
+  module:
+    - block_content
+  theme:
+    - b5subtheme
+id: mainbrand
+theme: b5subtheme
+region: nav_branding
+weight: 0
+provider: null
+plugin: 'block_content:18bf3a08-6636-4a58-ac9e-50bb4cc11c33'
+settings:
+  id: 'block_content:18bf3a08-6636-4a58-ac9e-50bb4cc11c33'
+  label: 'Main brand'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

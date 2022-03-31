@@ -1,0 +1,25 @@
+uuid: 8d60398c-e055-4e5a-807d-124a176816a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.domain-navigation
+  module:
+    - system
+  theme:
+    - b5subtheme
+id: domainnavigation
+theme: b5subtheme
+region: nav_domain
+weight: 0
+provider: null
+plugin: 'system_menu_block:domain-navigation'
+settings:
+  id: 'system_menu_block:domain-navigation'
+  label: 'Domain navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
