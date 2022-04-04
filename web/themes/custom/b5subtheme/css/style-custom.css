@@ -48,7 +48,7 @@
   background-color: rgb(220, 247, 235);
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .region-sidebar-first #block-topicbrand-2,
   .region-sidebar-first #block-topicnavigation-3 {
     display: none;
@@ -59,7 +59,7 @@
   .topic {
     display: none;
   }
-}
+} */
 
 @media (min-width: 992px) {
   main .container {
